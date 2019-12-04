@@ -1,0 +1,14 @@
+<!-- para gregar el indice a un ngFor hace falta colocar la variabre despues del ngFOr -->
+<!-- <ng-container> es una etiqueta HTML de Angular para coloar una sentencia *ngFor o *ngiF -->
+<input type="text" placeholder='search' [(ngModel)]="query"/>
+<h2>Friend</h2>
+<ng-container *ngFor="let user of friends | search:query; let i = index">
+  <div class="container">
+    <img src="../../assets/img/logo_live_{{user.status}}.png" alt="icon" id="status">
+    <a routerLink="/chat/{{user.uid}}">
+      {{user.nick}} - {{user.email}}
+    </a>
+  </div>
+</ng-container>
+<br>
+

@@ -1,1 +1,77 @@
 /* You can add global styles to this file, and also import other style files */
+.avatarFrameOffline{
+  background: rgba(226,226,226,1);
+  background: -moz-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(226,226,226,1)), color-stop(50%, rgba(219,219,219,1)), color-stop(51%, rgba(209,209,209,1)), color-stop(100%, rgba(254,254,254,1)));
+  background: -webkit-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+  background: -o-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+  background: -ms-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+  background: linear-gradient(to bottom, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0 );
+  -webkit-box-shadow: 2px 2px 34px -8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 34px -8px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 34px -8px rgba(0,0,0,0.75);
+  text-align: center;
+  padding: 5%;
+  border-radius: 10px;
+  border:1px solid #fff;
+  display: inline-block;
+}
+.avatarFrameOnline
+  {background: rgba(87, 240, 42,1);
+  background: -moz-linear-gradient(top, rgba(87, 240, 42,1) 0%, rgba(39, 200, 33,1) 50%, rgba(27, 170, 33,1) 51%, rgba(44, 163, 50,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(87, 240, 42,1)), color-stop(50%, rgba(39, 200, 33,1)), color-stop(51%, rgba(27, 170, 33,1)), color-stop(100%, rgba(44, 163, 50,1)));
+  background: -webkit-linear-gradient(top, rgba(87, 240, 42,1) 0%, rgba(39, 200, 33,1) 50%, rgba(27, 170, 33,1) 51%, rgba(44, 163, 50,1) 100%);
+  background: -o-linear-gradient(top, rgba(87, 240, 42,1) 0%, rgba(39, 200, 33,1) 50%, rgba(27, 170, 33,1) 51%, rgba(44, 163, 50,1) 100%);
+  background: -ms-linear-gradient(top, rgba(87, 240, 42,1) 0%, rgba(39, 200, 33,1) 50%, rgba(27, 170, 33,1) 51%, rgba(44, 163, 50,1) 100%);
+  background: linear-gradient(to bottom, rgba(87, 240, 42,1) 0%, rgba(39, 200, 33,1) 50%, rgba(27, 170, 33,1) 51%, rgba(44, 163, 50,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0 );
+  -webkit-box-shadow: 2px 2px 34px -8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 34px -8px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 34px -8px rgba(0,0,0,0.75);
+  text-align: center;
+  padding: 5%;
+  border-radius: 10px;
+  display: inline-block;
+  max-width: 135px;
+  max-height: 135px;
+  min-width: 135px;
+  min-height: 135px
+}
+.center{
+  text-align: center !important;
+}
+
+.marto15{
+  margin-top: 15px
+}
+.marbo15{
+  margin-bottom: 15px
+}
+
+.generalContent{
+  margin-top: 56px;
+}
+.dislock{
+  display: block !important;
+}
+.p-to45{
+  padding-top: 45px
+}
+input[type="file"]{
+  display: none;
+}
+.custon-file-upload{
+  background: #f2f6f8; /* Old browsers */
+  background: -moz-linear-gradient(top, #f2f6f8 0%, #d8e1e7 50%, #b5c6d0 51%, #e0eff9 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9',GradientType=0 ); /* IE6-9 */
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  border: 1px solid #8dd2f3;
+}
+.pointer{
+  cursor: pointer;
+}

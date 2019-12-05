@@ -16,23 +16,23 @@ export class UserService {
       status:"online"
     }
     let user1: user ={
-      nick:'Angela',
+      nick:'Jose',
       age: 34,
-      email:'aea.barrios@hotmail.com',
+      email:'jose@hotmail.com',
       friend:false,
       uid:"1",
       status:"online"
     }
     let user2: user ={
-      nick:'Angele',
+      nick:'Freddy',
       age: 34,
-      email:'aee.barrios@hotmail.com',
+      email:'Freddy@hotmail.com',
       friend:true,
       uid:"2",
       status:"offline"
     }
     let user3: user ={
-      nick:'Angeli',
+      nick:'Carla',
       age: 34,
       email:'aei.barrios@hotmail.com',
       friend:false,
@@ -40,7 +40,7 @@ export class UserService {
       status:"busy"
     }
     let user4: user ={
-      nick:'Angelo',
+      nick:'Veronica',
       age: 34,
       email:'aeo.barrios@hotmail.com',
       friend:true,

@@ -1,14 +1,41 @@
 <!-- para gregar el indice a un ngFor hace falta colocar la variabre despues del ngFOr -->
-<!-- <ng-container> es una etiqueta HTML de Angular para coloar una sentencia *ngFor o *ngiF -->
-<input type="text" placeholder='search' [(ngModel)]="query"/>
-<h2>Friend</h2>
-<ng-container *ngFor="let user of friends | search:query; let i = index">
-  <div class="container">
-    <img src="../../assets/img/logo_live_{{user.status}}.png" alt="icon" id="status">
-    <a routerLink="/chat/{{user.uid}}">
-      {{user.nick}} - {{user.email}}
-    </a>
+<!-- <d> es una etiqueta HTML de Angular para coloar una sentencia *ngFor o *ngiF -->
+<div class="homeContainer">
+  <div id="whiteBorderGlassBox">
+    <div class="homeHeadContainer">
+      <div class="row">
+        <div class="col-md-auto">
+          <div class="avatarFrameOnline">
+              <img src="../../assets/img/generic_avatar.png" alt="avatar" id="homeAvatarPicture">
+          </div>
+        </div>
+        <div class="col">
+          <b>Angel</b>
+          <div>
+            <span>online</span><br>
+            <span>< escribe un mensage ></span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</ng-container>
-<br>
-
+  <div class="whiteContainerPadded marto15">
+    <div class="row">
+      <div class="col">
+        <input class="form-control" type="text" placeholder='search' [(ngModel)]="query"/><br>
+      </div>
+      <div class="col-md-auto">
+        <img class="icon" src="assets/img/logo_live_add.png" alt="" srcset="">
+      </div>
+    </div>
+    <hr>
+    <b>Friend {{friends.length}}/{{friends.length}}</b>
+    <div class="d-block pointer" *ngFor="let user of friends | search:query; let i = index">
+        <img src="assets/img/logo_live_{{user.status}}.png" alt="icon" class="icon marbo5">
+        <span routerLink="/chat/{{user.uid}}">
+          <b>{{user.nick}}</b> - {{user.subnick || 'no subnick'}}
+          <small>{{user.email}}</small>
+        </span>
+    </div>
+  </div>
+</div>  

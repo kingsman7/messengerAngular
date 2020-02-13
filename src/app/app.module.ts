@@ -10,15 +10,21 @@ import { ProfileComponent } from './profile/profile.component';
 import { Routes, RouterModule } from '@angular/router';
 import { MenuComponent } from './menu/menu.component';
 import { SearchPipe } from './pipes/search';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-const appRoutes: Routes=[
-  {path:'', component:HomeComponent},
-  {path:'home', component:HomeComponent},
-  {path:'login', component:LoginComponent},
-  {path:'chat/:uid', component:ChatComponent},
-  {path:'profile', component:ProfileComponent}
-]
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuth } from '@angular/fire/auth';
+import { environment } from '../environments/environment';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+
+const appRoutes: Routes = [
+  {path: '', component: HomeComponent},
+  {path: 'home', component: HomeComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'chat/:uid', component: ChatComponent},
+  {path: 'profile', component: ProfileComponent}
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,9 +39,12 @@ const appRoutes: Routes=[
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
   ],
-  providers: [],
+  providers: [AngularFireAuth],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
